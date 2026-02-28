@@ -1,0 +1,55 @@
+# Basic YAML File Example
+
+# Key-Value Pairs
+name: John Doe
+age: 25
+email: john@example.com
+is_active: true
+
+# Nested Object
+address:
+  street: 123 Main St
+  city: New York
+  country: USA
+  zipcode: 10001
+
+# List / Array
+hobbies:
+  - reading
+  - coding
+  - gaming
+
+# List of Objects
+employees:
+  - name: Alice
+    age: 30
+    role: Developer
+  - name: Bob
+    age: 25
+    role: Designer
+
+# Multi-line String
+description: |
+  This is a multi-line
+  string in YAML.
+  Each line is preserved.
+
+# Single line string
+summary: >
+  This is a folded
+  string that becomes one line.
+
+# Numbers
+price: 9.99
+quantity: 100
+
+# Null value
+middle_name: null
+
+# Environment-style config
+database:
+  host: localhost
+  port: 5432
+  name: mydb
+  username: admin
+  password: secret
