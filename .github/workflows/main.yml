@@ -1,0 +1,26 @@
+name: My First Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print Hello
+        run: echo "Hello from GitHub Actions!"
+
+      - name: Show files
+        run: ls -la
+
+      - name: Show YAML files
+        run: cat test.yml
